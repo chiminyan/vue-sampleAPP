@@ -25,7 +25,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .page-footer {
-    background-color: rgb(105, 49, 119);
+    background-color: rgb(255, 226, 255);
     height: 100px;
   }
   .icons {
@@ -38,7 +38,7 @@ export default {
     width: 30px;
   }
   .page-footer p {
-    color: rgb(255, 226, 255);
+    color: rgb(105, 49, 119);
     text-align: center;
   }
 </style>
