@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <title-header></title-header>
-    <div class="main">
+    <div class="header">
+      <title-header></title-header>
       <book-title></book-title>
-      <book-image></book-image>
-      <description-list></description-list>
     </div>
-    <div class="right-contents">
-      <book-description></book-description>
+    <div class="main">
+      <div class="left-contents">
+        <book-image></book-image>
+        <description-list></description-list>
+      </div>
+      <div class="right-contents">
+        <book-description></book-description>
+        <book-info></book-info>
+      </div>
     </div>
     <page-footer></page-footer>
   </div>
@@ -18,6 +23,7 @@ import './normalize.css'
 import titleHeader from './components/Header.vue'
 import bookDescription from './components/BookDescription.vue'
 import bookImage from './components/BookImage.vue'
+import bookInfo from './components/BookInfo.vue'
 import bookTitle from './components/BookTitle.vue'
 import descriptionList from './components/DescriptionList.vue'
 import pageFooter from './components/Footer.vue'
@@ -28,6 +34,7 @@ export default {
     'title-header': titleHeader,
     'book-description': bookDescription,
     'book-image': bookImage,
+    'book-info': bookInfo,
     'book-title': bookTitle,
     'description-list': descriptionList,
     'page-footer': pageFooter
