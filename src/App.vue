@@ -50,6 +50,29 @@ export default {
     background-color: rgb(255, 226, 255);
   }
   .main {
+    display: flex;
     margin: 20px;
+  }
+
+  button {
+    background-color: #0066FF;
+    border: none;
+    height: 30px;
+    width: 30px;
+  }
+
+  .book-title {
+    margin: 10px;
+  }
+
+  .left-contents {
+    width: 50%;
+  }
+
+  .book-image {
+    margin-left: 10px;
+  }
+  .right-contents {
+    width: 50%;
   }
 </style>

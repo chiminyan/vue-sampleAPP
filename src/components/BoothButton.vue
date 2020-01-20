@@ -1,7 +1,7 @@
 <template>
     <div class="booth-button">
         <div class="button">
-            <a href="booth.url"><p>購入する</p></a>
+            <a v-bind:href="url"><p>購入する</p></a>
         </div>
     </div>
 </template>
@@ -11,11 +11,7 @@ export default {
     name: 'boothButton',
     data() {
         return {
-            booth: [
-                {
                     url: 'https://aaaa'
-                }
-            ]
         }
     }
 }
