@@ -1,0 +1,63 @@
+[
+    {
+        "book_description": "スコティッシュ",
+        "book_id": "1",
+        "book_info": [
+            {
+            "book_info_id": "1",
+            "book_info_title": "インフォタイトル1",
+            "book_info_url": "http://aaa"
+            },
+            {
+            "book_info_id": "2",
+            "book_info_title": "インフォタイトル4",
+            "book_info_url": "http://bbb"
+            }
+        ],
+        "book_title": "にゃんちゃん",
+        "booth_url": "https://ccc",
+        "overviews": [
+            {
+                "overviews_id": "1",
+                "overviews_promotion": "ポイント１"
+            },
+            {
+                "overviews_id": "2",
+                "overviews_promotion": "ポイント２"
+            },
+            {
+                "overviews_id": "3",
+                "overviews_promotion": "ポイント３"
+            }
+        ]
+    },
+    {
+        "book_description": "チャトラ",
+        "book_id": "2",
+        "book_info": [
+            {
+                "book_info_id": "1",
+                "book_info_title": "インフォタイトル2",
+                "book_info_url": "http://ddd"
+            },
+            {
+                "book_info_id": "2",
+                "book_info_title": "インフォタイトル3",
+                "book_info_url": "http://eee"
+        
+            }
+        ],
+        "book_title": "ネコチャン",
+        "booth_url": "https://fff",
+        "overviews": [
+            {
+                "overviews_id": "1",
+                "overviews_promotion": "もふもふ"
+            },
+            {
+                "overviews_id": "2",
+                "overviews_promotion": "もふもふ２"
+            }
+        ]
+    }
+]
