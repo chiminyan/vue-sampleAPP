@@ -3,8 +3,8 @@
         <div class="overview">
             <h3>ちみポイント</h3>
             <ul>
-                <li v-for="(item) in overviews" v-bind:key="item.id">
-                    {{ item.promotion }}
+                <li v-for="item in promotionData" v-bind:key="item.id">
+                    {{ item }}
                 </li>
             </ul>
         </div>
@@ -12,15 +12,30 @@
 </template>
 
 <script>
+import bookData from '../assets/book-data.json'
 export default {
     name: 'descriptionList',
     data() {
         return {
-            overviews: [
-                { promotion: 'ポイント１' },
-                { promotion: 'ポイント２' },
-                { promotion: 'ポイント３' }
-            ]
+            bookData: bookData,
+        }
+    },
+    computed: {
+        promotionData: function() {
+            // ここから下を追記
+            // 繰り返し処理で overviews_promotion の値を全部抜いて新しい配列を作り、 return する
+            const arrayLength = bookData[0].overviews.length;
+            const arrayData = bookData[0].overviews
+            console.log(arrayLength);
+            console.log(arrayData);
+            console.log(arrayData[0].overviews_promotion);
+            const promotions = []
+            for (let count = 0; count < arrayLength; count++) {
+                const data = arrayData[count].overviews_promotion;
+                promotions.push(data);
+            }
+            console.log(promotions);
+            return promotions;
         }
     }
 }
