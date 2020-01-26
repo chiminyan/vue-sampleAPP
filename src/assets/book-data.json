@@ -4,14 +4,21 @@
         "book_id": "1",
         "book_info": [
             {
-            "book_info_id": "1",
-            "book_info_title": "インフォタイトル1",
-            "book_info_url": "http://aaa"
+                "year": 2017,
+                "month": "4月",
+                "event_name": "技術書典２"
+            }
+        ],
+        "book_url": [
+            {
+                "book_url_id": "1",
+                "book_url_title": "インフォタイトル1",
+                "book_url_url": "http://aaa"
             },
             {
-            "book_info_id": "2",
-            "book_info_title": "インフォタイトル4",
-            "book_info_url": "http://bbb"
+                "book_url_id": "2",
+                "book_url_title": "インフォタイトル4",
+                "book_url_url": "http://bbb"
             }
         ],
         "book_title": "にゃんちゃん",
@@ -36,14 +43,21 @@
         "book_id": "2",
         "book_info": [
             {
-                "book_info_id": "1",
-                "book_info_title": "インフォタイトル2",
-                "book_info_url": "http://ddd"
+                "year": 2017,
+                "month": "10月",
+                "event_name": "技術書典３"
+            }
+        ],
+        "book_url": [
+            {
+                "book_url_id": "1",
+                "book_url_title": "インフォタイトル2",
+                "book_url_url": "http://ddd"
             },
             {
-                "book_info_id": "2",
-                "book_info_title": "インフォタイトル3",
-                "book_info_url": "http://eee"
+                "book_url_id": "2",
+                "book_url_title": "インフォタイトル3",
+                "book_url_url": "http://eee"
         
             }
         ],
