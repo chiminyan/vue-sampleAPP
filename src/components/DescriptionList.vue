@@ -22,19 +22,14 @@ export default {
     },
     computed: {
         promotionData: function() {
-            // ここから下を追記
             // 繰り返し処理で overviews_promotion の値を全部抜いて新しい配列を作り、 return する
             const arrayLength = bookData[0].overviews.length;
-            const arrayData = bookData[0].overviews
-            console.log(arrayLength);
-            console.log(arrayData);
-            console.log(arrayData[0].overviews_promotion);
-            const promotions = []
+            const arrayData = bookData[0].overviews;
+            const promotions = [];
             for (let count = 0; count < arrayLength; count++) {
                 const data = arrayData[count].overviews_promotion;
                 promotions.push(data);
             }
-            console.log(promotions);
             return promotions;
         }
     }
