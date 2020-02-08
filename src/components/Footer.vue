@@ -8,6 +8,7 @@
       <p>©️   2020 ちみ</p>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -22,7 +23,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .page-footer {
     background-color: rgb(255, 226, 255);

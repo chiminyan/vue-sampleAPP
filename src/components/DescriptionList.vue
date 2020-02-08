@@ -15,6 +15,7 @@
 import bookData from '../assets/book-data.json'
 export default {
     name: 'descriptionList',
+    props: ['id'],
     data() {
         return {
             bookData: bookData,
@@ -23,8 +24,8 @@ export default {
     computed: {
         promotionData: function() {
             // 繰り返し処理で overviews_promotion の値を全部抜いて新しい配列を作り、 return する
-            const arrayLength = bookData[0].overviews.length;
-            const arrayData = bookData[0].overviews;
+            const arrayLength = bookData[this.id].overviews.length;
+            const arrayData = bookData[this.id].overviews;
             const promotions = [];
             for (let count = 0; count < arrayLength; count++) {
                 const data = arrayData[count].overviews_promotion;
@@ -38,6 +39,7 @@ export default {
 
 <style scoped>
 .description-list {
+    color: lightblue;
     height: 250px;
     margin-top: 20px;
     width: 570px;

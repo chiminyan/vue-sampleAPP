@@ -1,7 +1,7 @@
 <template>
     <div class="booth-button">
         <div class="button">
-            <a v-bind:href="boothUrl"><p>購入する</p></a>
+            <a v-bind:href="boothUrl"><p>サイトを見る</p></a>
         </div>
     </div>
 </template>
@@ -10,6 +10,7 @@
 import bookData from '../assets/book-data.json'
 export default {
     name: 'boothButton',
+    props: ['id'],
     data() {
         return {
             bookData: bookData
@@ -18,7 +19,7 @@ export default {
     computed: {
         boothUrl: function() {
             // JSON から BOOTH の URL を取得して返却する
-            return bookData[0].booth_url;
+            return bookData[this.id].booth_url;
         }
     }
 }

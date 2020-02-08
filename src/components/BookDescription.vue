@@ -1,6 +1,6 @@
 <template>
   <div class="book-description">
-    <div class="description" v-bind:description="text">{{ text }}</div>
+    <div class="description" v-bind:description="descText">{{ descText }}</div>
   </div>
 </template>
 
@@ -8,6 +8,7 @@
 import bookData from '../assets/book-data.json'
 export default {
   name: 'bookDescription',
+  props: ['id'],
   data() {
     return {
       bookData: bookData
@@ -23,7 +24,7 @@ export default {
 
 <style scoped>
 .book-description {
-  height: 250px;
+  color: purple;
   margin-top: 20px;
   width: 570px;
 }

@@ -10,6 +10,7 @@
 import bookData from '../assets/book-data.json'
 export default {
     name: 'bookTitle',
+    props: ['id'],
     data() {
         return {
             bookData: bookData
@@ -18,7 +19,7 @@ export default {
     computed: {
         bookTitle: function() {
             // JSON から本のタイトルを取得する
-            return bookData[0].book_title;
+            return bookData[this.id].book_title;
         }
     }
 }
@@ -29,8 +30,5 @@ export default {
     background-color: rgb(255, 226, 255);
     color: rgb(105, 49, 119);
     font-size: 30px;
-}
-.fanbook-title {
-    width: 520px;
 }
 </style>

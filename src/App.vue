@@ -2,23 +2,23 @@
   <div id="app">
     <div class="header">
       <title-header></title-header>
-      <book-title></book-title>
+      <book-title v-bind:id="currentBookId"></book-title>
     </div>
     <div class="main">
-      <button class="back_button" type="button">
+      <button class="back_button" type="button" v-on:click="removeCount">
         <img v-bind:src="left_arrow" alt="back">
       </button>
       <div class="left-contents">
-        <book-image></book-image>
-        <description-list></description-list>
+        <book-image v-bind:id="currentBookId"></book-image>
+        <description-list v-bind:id="currentBookId"></description-list>
       </div>
       <div class="right-contents">
-        <book-description></book-description>
-        <book-info></book-info>
-        <booth-button></booth-button>
+        <book-description v-bind:id="currentBookId"></book-description>
+        <book-info v-bind:id="currentBookId"></book-info>
+        <booth-button v-bind:id="currentBookId"></booth-button>
       </div>
-      <button class="next_button">
-        <img v-bind:src="right_arrow" alt="next">
+      <button class="next_button" v-on:click="addCount">
+
       </button>
     </div>
     <page-footer></page-footer>
@@ -28,6 +28,7 @@
 <script>
 import './normalize.css'
 import titleHeader from './components/Header.vue'
+import bookData from './assets/book-data.json'
 import bookDescription from './components/BookDescription.vue'
 import bookImage from './components/BookImage.vue'
 import bookInfo from './components/BookInfo.vue'
@@ -50,8 +51,34 @@ export default {
   },
   data() {
     return {
-      left_arrow:require("./assets/arrow/baseline-keyboard_arrow_left-24px.svg"),
-      right_arrow:require("./assets/arrow/baseline-keyboard_arrow_right-24px.svg"),
+      bookData: bookData,
+      bookId: 0,
+      left_arrow: require("./assets/arrow/baseline-keyboard_arrow_left-24px.svg"),
+      right_arrow: require("./assets/arrow/baseline-keyboard_arrow_right-24px.svg")
+    }
+  },
+  computed: {
+    currentBookId: function() {
+      return this.bookId;
+    }
+  },
+  methods: {
+    addCount() {
+      if (this.bookId < bookData.length -1) {
+        return this.bookId++;
+      } else if (this.bookId >= bookData.length - 1) {
+          this.bookId = bookData.length - 1;
+          return this.bookId;
+        } else {
+          return;
+        }
+    },
+    removeCount() {
+      if (this.bookId !== 0) {
+        return this.bookId--;
+      } else {
+        return 0;
+      }
     }
   }
 }
@@ -67,7 +94,7 @@ export default {
   }
 
   button {
-    background-color: #0066FF;
+    background-color: purple;
     border: none;
     height: 30px;
     width: 30px;
@@ -77,6 +104,11 @@ export default {
     margin: 10px;
   }
 
+  .back-button {
+    margin-top: 40%;
+    margin-left: 10px;
+  }
+
   .left-contents {
     width: 50%;
   }
@@ -84,6 +116,11 @@ export default {
   .book-image {
     margin-left: 10px;
   }
+
+  .description-list {
+    margin-left: 10px;
+  }
+
   .right-contents {
     width: 50%;
   }
