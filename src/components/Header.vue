@@ -1,5 +1,7 @@
 <template>
-  <h1>{{ title }}</h1>
+  <div class="title-header">
+    <h1>{{ title }}</h1>
+  </div>
 </template>
 
 <script>
@@ -7,17 +9,20 @@ export default {
   name: 'titleHeader',
   data () {
     return {
-      title: '同人誌展示会場'
+      title: '本の紹介ページ'
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
+  align-items: center;
   background-color: rgb(105, 49, 119);
   color: rgb(255, 226, 255);
+  display: flex;
+  font-size: 28px;
   height: 100px;
+  margin: 0;
 }
 </style>

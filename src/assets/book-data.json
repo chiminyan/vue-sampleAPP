@@ -1,0 +1,77 @@
+[
+    {
+        "book_description": "スコティッシュ",
+        "book_id": "1",
+        "book_info": [
+            {
+                "year": 2017,
+                "month": "4月",
+                "event_name": "技術書典２"
+            }
+        ],
+        "book_url": [
+            {
+                "book_url_id": "1",
+                "book_url_title": "インフォタイトル1",
+                "book_url_url": "http://aaa"
+            },
+            {
+                "book_url_id": "2",
+                "book_url_title": "インフォタイトル4",
+                "book_url_url": "http://bbb"
+            }
+        ],
+        "book_title": "にゃんちゃん",
+        "booth_url": "https://ccc",
+        "overviews": [
+            {
+                "overviews_id": "1",
+                "overviews_promotion": "ポイント１"
+            },
+            {
+                "overviews_id": "2",
+                "overviews_promotion": "ポイント２"
+            },
+            {
+                "overviews_id": "3",
+                "overviews_promotion": "ポイント３"
+            }
+        ]
+    },
+    {
+        "book_description": "チャトラ",
+        "book_id": "2",
+        "book_info": [
+            {
+                "year": 2017,
+                "month": "10月",
+                "event_name": "技術書典３"
+            }
+        ],
+        "book_url": [
+            {
+                "book_url_id": "1",
+                "book_url_title": "インフォタイトル2",
+                "book_url_url": "http://ddd"
+            },
+            {
+                "book_url_id": "2",
+                "book_url_title": "インフォタイトル3",
+                "book_url_url": "http://eee"
+        
+            }
+        ],
+        "book_title": "ネコチャン",
+        "booth_url": "https://fff",
+        "overviews": [
+            {
+                "overviews_id": "1",
+                "overviews_promotion": "もふもふ"
+            },
+            {
+                "overviews_id": "2",
+                "overviews_promotion": "もふもふ２"
+            }
+        ]
+    }
+]
