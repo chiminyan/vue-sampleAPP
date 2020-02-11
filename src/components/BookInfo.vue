@@ -61,7 +61,6 @@ export default {
 
 <style scoped>
 .book-info {
-    color: lightblue;
     font-size: 16px;
     line-height: 26px;
 }

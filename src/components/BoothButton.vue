@@ -1,7 +1,7 @@
 <template>
     <div class="booth-button">
         <div class="button">
-            <a v-bind:href="boothUrl"><p>サイトを見る</p></a>
+            <a v-bind:href="boothUrl"><p>リンクボタン</p></a>
         </div>
     </div>
 </template>

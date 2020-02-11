@@ -1,7 +1,7 @@
 <template>
     <div class="description-list">
         <div class="overview">
-            <h3>ちみポイント</h3>
+            <h3>ポイント</h3>
             <ul>
                 <li v-for="item in promotionData" v-bind:key="item.id">
                     {{ item }}
@@ -39,7 +39,6 @@ export default {
 
 <style scoped>
 .description-list {
-    color: lightblue;
     height: 250px;
     margin-top: 20px;
     width: 570px;

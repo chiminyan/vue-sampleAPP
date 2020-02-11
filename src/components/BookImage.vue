@@ -1,6 +1,6 @@
 <template>
     <div class="book-image">
-        <img :src="image_src" alt="bookImage">
+        <img :src="frontImage" alt="bookImage">
         <img :src="backImage" alt="bookImage">
     </div>
 </template>
