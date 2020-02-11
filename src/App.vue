@@ -18,7 +18,7 @@
         <booth-button v-bind:id="currentBookId"></booth-button>
       </div>
       <button class="next_button" v-on:click="addCount">
-
+        <img v-bind:src="right_arrow" alt="next">
       </button>
     </div>
     <page-footer></page-footer>
@@ -94,8 +94,16 @@ export default {
   }
 
   button {
-    background-color: purple;
+    padding: 0;
+    background-color: gray;
     border: none;
+    height: 30px;
+    width: 30px;
+  }
+
+  img {
+    margin: 0;
+    padding: 0;
     height: 30px;
     width: 30px;
   }

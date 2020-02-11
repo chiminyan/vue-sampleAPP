@@ -1,12 +1,12 @@
 [
     {
-        "book_description": "スコティッシュ",
+        "book_description": "実家で飼っているスコティッシュホールドの男の子です。よくヘソ天してくれますが触ると攻撃してきます。",
         "book_id": "1",
         "book_info": [
             {
                 "year": 2017,
                 "month": "4月",
-                "event_name": "技術書典２"
+                "event_name": "イベントネーム"
             }
         ],
         "book_url": [
@@ -39,13 +39,13 @@
         ]
     },
     {
-        "book_description": "チャトラ",
+        "book_description": "THE ALLEYのタピオカとジョナサンのプリンパフェです。タピオカはやっぱり黒糖タピオカが最高。",
         "book_id": "2",
         "book_info": [
             {
                 "year": 2017,
                 "month": "10月",
-                "event_name": "技術書典３"
+                "event_name": "イベントネーム"
             }
         ],
         "book_url": [
@@ -61,7 +61,7 @@
         
             }
         ],
-        "book_title": "ネコチャン",
+        "book_title": "スイーツ探索",
         "booth_url": "https://fff",
         "overviews": [
             {
